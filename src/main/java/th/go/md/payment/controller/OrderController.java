@@ -17,12 +17,12 @@ public class OrderController {
   @Autowired
   private OrderRepository orderRepository;
 
-  @GetMapping("")
+  @GetMapping(value = "", produces="application/json")
   public List<Order> getAllOrders() {
     return orderRepository.findAlll();
   }
 
-  @GetMapping("/{orderId}")
+  @GetMapping(value = "/{orderId}", produces="application/json")
   public List<Order> getOrderByOrderId(String orderId) {
     return orderRepository.findByOrderId(orderId);
   }
