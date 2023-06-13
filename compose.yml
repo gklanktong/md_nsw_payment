@@ -1,0 +1,5 @@
+services:
+  server:
+    image: at/md_payment:latest
+    ports:
+      - 8080:8080

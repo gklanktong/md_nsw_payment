@@ -1,0 +1,6 @@
+
+./gradlew bootBuildImage --imageName=at/md_payment:latest
+
+docker compose up
+
+http://localhost:8080/orders
