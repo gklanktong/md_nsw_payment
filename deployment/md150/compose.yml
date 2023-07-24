@@ -1,0 +1,6 @@
+services:
+  server:
+    image: localhost:5000/aaa/md_payment:latest
+    ports:
+      - 9090:8080
+    restart: unless-stopped

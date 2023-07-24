@@ -1,6 +1,8 @@
 
-./gradlew bootBuildImage --imageName=at/md_payment:latest
+./gradlew bootJar && docker compose build && docker compose up -d && docker compose logs -f
 
-docker compose up
+http://localhost:9090/swagger-ui/index.html
 
-http://localhost:8080/orders
+./deployment/md150/deploy.sh
+
+http://164.115.45.150:9090/swagger-ui/index.html

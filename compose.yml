@@ -1,5 +1,6 @@
 services:
   server:
-    image: at/md_payment:latest
+    build: .
+    image: aaa/md_payment:latest
     ports:
-      - 8080:8080
+      - 9090:8080
